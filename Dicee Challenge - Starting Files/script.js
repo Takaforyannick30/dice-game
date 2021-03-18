@@ -11,10 +11,13 @@ document.querySelector("img").setAttribute("src", "./images/dice" + finalRandomN
 
 document.querySelector("img.img2").setAttribute("src", "./images/dice" + finalRandomNumber2 + ".png");
 
-if (randomNumber1 > randomNumber2) {
-    document.querySelector("h1").innerHTML = "Player 1 wins!";
-} else if(randomNumber1 == randomNumber2){
-    document.querySelector("h1").innerHTML = "It's a draw";
-} else {
+if (finalRandomNumber1 === finalRandomNumber2) {
+    document.querySelector("h1").innerHTML = "its a draw";
+} 
+else if(finalRandomNumber2 > finalRandomNumber1){
     document.querySelector("h1").innerHTML = "Player 2 wins";
+} 
+else {
+    document.querySelector("h1").innerHTML = "1";
 }
+
